@@ -30,7 +30,7 @@ typedef struct {
 
 typedef struct {
 	Color turn;
-	Piece board[];
+	Piece board[32];
 } Game;
 
 typedef struct {

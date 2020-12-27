@@ -9,6 +9,9 @@ include config.mk
 all: options ${BIN}
 
 options:
+	@echo "CC      = ${CC}"
+	@echo "CFLAGS  = ${CFLAGS}"
+	@echo "LDFLAGS = ${LDFLAGS}"
 
 clean:
 	rm -rf ${BIN} ${OBJ}
