@@ -63,3 +63,6 @@ dkms.conf
 # Don't track individual config
 config.h
 
+# Don't trach built binary
+chessy
+
