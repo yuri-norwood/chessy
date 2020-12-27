@@ -51,9 +51,11 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# misc
+# Non-git Dotfiles
+.*
+!.git*
+
+# Backup and Temporary Files
 *.bak
 *.tmp
 *.back
-.*
-!.git*
