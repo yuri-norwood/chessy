@@ -59,3 +59,7 @@ dkms.conf
 *.bak
 *.tmp
 *.back
+
+# Don't track individual config
+config.h
+
