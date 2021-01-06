@@ -177,6 +177,12 @@ static int IsCheck(Game game) {
 }
 
 static int IsMate(Game game) {
+	int check = IsCheck(game);
+	
+	if (check) {
+		return check;
+	}
+	
 	return -1;
 }
 
