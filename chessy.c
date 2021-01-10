@@ -195,6 +195,7 @@ static int IsMate(Game game) {
 	/**
 	 * - get king
 	 * - run IsCheck(game) for all available king moves
+	 * - check for king in adjacent squares (not covered by IsCheck)
 	 * - get lines of attack
 	 * - look for blocking pieces for each blockable path
 	 */
