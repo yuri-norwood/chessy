@@ -173,6 +173,15 @@ Game NewGame() {
 Game Play(Game game, Move move, Color turn);
 
 static int IsCheck(Game game) {
+	/**
+	 * - get king
+	 * - from king:
+	 *   - check pawns (x2)
+	 *   - check knights (x8)
+	 *   - check ranks and files for rooks and queen (x14 each)
+	 *   - check diagonals for bishops and queen (x14 each)
+	 */
+
 	return -1;
 }
 
@@ -182,7 +191,14 @@ static int IsMate(Game game) {
 	if (check) {
 		return check;
 	}
-	
+
+	/**
+	 * - get king
+	 * - run IsCheck(game) for all available king moves
+	 * - get lines of attack
+	 * - look for blocking pieces for each blockable path
+	 */
+
 	return -1;
 }
 
